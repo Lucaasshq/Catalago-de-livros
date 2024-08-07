@@ -5,10 +5,10 @@ import java.util.List;
 
 public class LivroRepository {
 
-   private List<Livro> livroList;
+   private final List<Livro> livroList;
 
     public LivroRepository() {
-        this.livroList = new ArrayList<Livro>();
+        this.livroList = new ArrayList<>();
     }
 
     public void adicionarLivro(String titulo, String autor, int anoPublicacao) {
@@ -53,7 +53,7 @@ public class LivroRepository {
     }
 
     public void removerLivroTitulo(String titulo) {
-        List<Livro> livrosRemover = new ArrayList<Livro>();
+        List<Livro> livrosRemover = new ArrayList<>();
         for (Livro l : livroList) {
             if(l.getTitulo().equalsIgnoreCase(titulo)) {
                 livrosRemover.add(l);
