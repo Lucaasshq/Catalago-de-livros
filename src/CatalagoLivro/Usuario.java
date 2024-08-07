@@ -5,7 +5,7 @@ public class Usuario {
     public static void main(String[] args) {
         LivroRepository livroRepository = new LivroRepository();
 
-        livroRepository.adicionarLivro("Dom Casmurro", "machado de assis", 2020);
+        livroRepository.adicionarLivro("Dom Casmurro", "machado de assis", 2024);
         livroRepository.adicionarLivro("Dom Casmurro", "machado de assis", 2020);
         livroRepository.adicionarLivro("Assim falou Zaratustra", "nietzsche", 1990);
         livroRepository.adicionarLivro("Livro 1", "Autor 1", 2020);
@@ -18,6 +18,7 @@ public class Usuario {
         System.out.println(livroRepository.pesquisarPorAutor("machado de assis"));
         System.out.println(livroRepository.pesquisarPorTitulo("Assim falou Zaratustra"));
         System.out.println(livroRepository.pesquisarPorIntervaloAno(2020, 2022));
+        System.out.println(livroRepository.pesquisarPorTitulo("Dom Casmurro"));
 
 
 
